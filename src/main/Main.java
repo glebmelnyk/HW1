@@ -47,7 +47,7 @@ public class Main {
         System.out.println(newPerses[0].getName());
         System.out.println(newPerses[1].getName());
 
-
+        System.out.println("HZ");
 
 
     }
