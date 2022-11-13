@@ -2,18 +2,12 @@ package main;
 
 import domain.Address;
 import domain.Person;
-import modificator.AddressModificator;
-import modificator.PostalCodeModImpl;
-import modificator.CountryMod;
 import mycomparator.PersonComparator;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-
 
         Address vasyaadress = new Address("Canada", "Washington", 23, 31500);
         Address johnAdress = new Address("USA", "Wictory", 14, 31509);
@@ -33,7 +27,7 @@ public class Main {
         comparePersonAddress(p1, p2);
 
         PersonComparator personComparator = new PersonComparator();
-        Person[] persons = {p1,p2,p3,p4,p5,p6,p7,p8,p9,p10};
+        Person[] persons = {p1, p2, p3, p4, p5, p6, p7, p8, p9, p10};
         Person[] newPerses = new Person[2];
 
         Scanner scanner = new Scanner(System.in);
@@ -48,10 +42,9 @@ public class Main {
         System.out.println(newPerses[1].getName());
 
         System.out.println("HZ");
-
-
     }
-    public static void comparePersonAddress(Person person1, Person person2){
+
+    public static void comparePersonAddress(Person person1, Person person2) {
         String notification = "Address of " + person1.getName() + " " + person2.getName() + ": ";
         boolean addressEquals = person1.getAdress().getCountry().equals(person2.getAdress().getCountry());
         System.out.println(notification + addressEquals);
