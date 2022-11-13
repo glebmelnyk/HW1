@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        
+
         Address vasyaadress = new Address("Canada", "Washington", 23, 31500);
         Address johnAdress = new Address("USA", "Wictory", 14, 31509);
         Address uaAddress = new Address("Ukraine", "Bandery", 14, 65200);
@@ -42,8 +42,6 @@ public class Main {
         System.out.println(newPerses[1].getName());
 
         System.out.println("HZ");
-
-
     }
 
     public static void comparePersonAddress(Person person1, Person person2) {
